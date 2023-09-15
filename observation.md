@@ -4,7 +4,7 @@ Individual data points making up the value of a property
 |Property |Expected Type |Description |
 |---------|--------------|------------|
 |observationAbout |Thing |The thing containing the observation |
-|source |Thing |The thing containing the observtion |
+|source |Thing |The thing containing the observation |
 |instrument |Thing |The tool that collected the observation |
 |agent |Thing |The thing responsible for the observation |
 |[measuredProperty](https://schema.org/measuredProperty) |str |The thing responsible for the observation |
