@@ -17,6 +17,6 @@ An initiative with a defined deliverable, start and end date.
 |participants |Person |People working on the project |
 |startTime |Date or datetime |The start date of the project |
 |Properties from Thing | | |
-|name|xxx |The name of the project |
-|Description |Text | The description of the project |
+|name |xxx |The name of the project |
+|Description |Text |The description of the project |
 |url |xxx |xxx |
