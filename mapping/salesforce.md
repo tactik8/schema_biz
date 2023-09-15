@@ -17,9 +17,6 @@
 ```json
   {
     "@metadata": {
-      "observationAbout": {
-          "@type": "schema:postalAddress"
-      },
       "source": {
           "@type": "schema:dataFeedItem",
           "sameAs": "https://www.salesforce.com/" + <object> + "/" + record.Id,
