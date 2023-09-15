@@ -44,6 +44,38 @@
   }
   ```
 
+#### Asset
+```json
+  {
+    "@context": "https://schema.org/",
+    "@type": "schema:person",
+    "@id": ???,
+    "serialNumber": record.SerialNumber,
+    "category":
+    "color":
+    "depth":
+    "gtin": 
+    "height":
+    "itemCondition":
+    "manufacturer":
+    "material":
+    "model":
+    "mpn":
+    "productID",
+    "productionDate": record.ManufactureDate, 
+    "purchaseDate": record.PurchaseDate,
+    "releaseDate":
+    "sku": record.StockKeepingUnit,
+    "weight":
+    "width":
+    "description":
+    "name": record.Name,
+    "image":
+    "url":
+    "sameAs": "https://www.salesforce.com/asset/" + record.id, 
+  }
+```
+
 #### Contact
 
 ```json
@@ -88,6 +120,37 @@
     "url": record.Website
   }
   ```
+#### Product2
+```json
+  {
+    "@context": "https://schema.org/",
+    "@type": "schema:person",
+    "@id": ???, "",
+    "category":  "",
+    "color": "",
+    "depth": "",
+    "gtin":  "",
+    "height": "",
+    "itemCondition": "",
+    "manufacturer": "",
+    "material": "",
+    "model": "",
+    "mpn": "",
+    "productID", "https://www.salesforce.com/asset/" + record.ProductCode,
+    "productionDate": record.ManufactureDate, 
+    "purchaseDate": record.PurchaseDate,
+    "releaseDate": "",
+    "sku": record.StockKeepingUnit,
+    "weight": "",
+    "width": "",
+    "description": record.Description,
+    "name": record.Name,
+    "image": "",
+    "url": record.DisplayUrl,
+    "sameAs": "https://www.salesforce.com/asset/" + record.id, 
+  }
+```
+
 
   
   
