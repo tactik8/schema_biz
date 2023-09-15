@@ -13,6 +13,28 @@
 
 ### SF to schema
 
+#### Metadata
+```json
+  {
+      "@metadata": {
+          "observationAbout": {
+              "@type": "schema:postalAddress"
+          },
+          "source": {
+              "@type": "schema:dataFeedItem",
+              "sameAs": "https://www.salesforce.com/+ <object> + "/" + record.Id,
+              "
+          },
+          "observationDate": record.LastModifiedDate,
+          "observationCredibility": ???
+          "agent": {
+              "@type": "schema:person",
+              "sameAs": "https://www.salesforce.com/user" + record.LastModifiedById
+          }  
+}
+        
+
+
 #### Address
 ```json
   {
@@ -42,7 +64,7 @@
       "sameAs": "https://www.salesforce.com/account/" + record.ParentId
       },
     "url": record.Website,
-    "sameAs": "https://www.salesforce.com/account/" + record.id
+    "sameAs": "https://www.salesforce.com/account/" + record.Id
   }
   ```
 
@@ -74,7 +96,7 @@
     "name": record.Name,
     "image":
     "url":
-    "sameAs": "https://www.salesforce.com/asset/" + record.id, 
+    "sameAs": "https://www.salesforce.com/asset/" + record.Id, 
   }
 ```
 
@@ -120,7 +142,7 @@
       "sameAs": "https://www.salesforce.com/account/" + record.AccountId
       },
     "url": record.Website,
-    "sameAs": "https://www.salesforce.com/contact/" + record.id
+    "sameAs": "https://www.salesforce.com/contact/" + record.Id
   }
   ```
 #### Product2
@@ -150,7 +172,7 @@
     "name": record.Name,
     "image": "",
     "url": record.DisplayUrl,
-    "sameAs": "https://www.salesforce.com/product2/" + record.id
+    "sameAs": "https://www.salesforce.com/product2/" + record.Id
   }
 ```
 
