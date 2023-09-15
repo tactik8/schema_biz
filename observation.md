@@ -3,7 +3,7 @@ Individual data points making up the value of a property
 
 |Property |Expected Type |Description |
 |---------|--------------|------------|
-|observationAbout |Thing |The thing containing the observtion |
+|observationAbout |Thing |The thing containing the observation |
 |source |Thing |The thing containing the observtion |
 |instrument |Thing |The tool that collected the observation |
 |agent |Thing |The thing responsible for the observation |
