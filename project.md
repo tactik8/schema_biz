@@ -4,7 +4,6 @@ An initiative with a defined deliverable, start and end date.
 
 |Property |Expected Type |Description |
 |---------|--------------|------------|
-
 |Objective |Obj |The objectives of the project |
 |projectNumber |Text |Identifier for the project |
 |ProjectManager |Person |The PM |
