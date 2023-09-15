@@ -13,8 +13,8 @@
 
 ### Organization
 #### SF to schema
-```jsonc
-{
+```json
+  {
   "@context": "https://schema.org/",
   "@id": record.id,
   "name": record.name,
