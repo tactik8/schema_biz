@@ -7,7 +7,7 @@ Individual data points making up the value of a property
 |source |Thing |The thing containing the observtion |
 |instrument |Thing |The tool that collected the observation |
 |agent |Thing |The thing responsible for the observation |
-|measuredProperty |str |The thing responsible for the observation |
+|[measuredProperty](https://schema.org/measuredProperty) |str |The thing responsible for the observation |
 |value |Any |The value for obs |
 |unitCode |Text |The unitCode |
 |observationDate |Date of datetime |The thing responsible for the observation |
