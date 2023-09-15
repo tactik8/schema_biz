@@ -143,12 +143,91 @@
     "sameAs": "https://www.salesforce.com/contact/" + record.Id
   }
   ```
+
+
+
+
+
+#### Order
+```json
+  {
+    "@context": "https://schema.org/",
+    "@type": "schema:order",
+    "@id": "",
+    "billingAddress": Address(record.BillingAddress),
+    "confirmationNumber":
+    "customer": {
+      "@type": "schema:organization":
+      "sameAs": "https://www.salesforce.com/account/" + record.AccountId
+    },
+    "discount":
+    "discountCode":
+    "discountCurrency":
+    "orderDate":
+    "orderDelivery": {
+      "@type": "schema:parcelDelivery", 
+      "deliveryAddress": Address(record.ShippingAddress),
+      "sameAs":  "https://www.salesforce.com/order/" + record.Id,
+    },
+    "orderNnumber":
+    "orderStatus": record.status,
+    "orderedItem": "",
+    "partOfInvoive":
+    "paymentDueDate":
+    "paymentMethod":
+    "paymentMethodId":
+    "seller":
+    "description": record.Description,
+    "sameAs": "https://www.salesforce.com/order/" + record.Id
+
+}
+
+```
+
+
+#### OrderProduct
+```json
+
+  {
+    "@context": "https://schema.org/",
+    "@type": "schema:order",
+    "sameAs": "https://www.salesforce.com/order/" + record.OrderId,
+    {
+      "@context": "https://schema.org/",
+      "@type": "schema:orderItem",
+      "@id": "",
+      "orderDelivery": {
+        "@type": "schema:parcelDelivery", 
+        "deliveryAddress": Address(record.ShippingAddress),
+        "sameAs":  "https://www.salesforce.com/order/" + record.Id,
+      },
+      "orderItemNumber": record.OrderItemNumber,
+      "orderItemstatus": "",
+      "orderQuantity": Quantity,
+      "orderedItem": {
+        "@type": "schem:product",
+        "sameAs": "https://www.salesforce.com/order/" + record.Product2Id,
+      },
+      "price": record.unitPrice,
+      "priceCurrency": 
+      "description": record.Description,
+      "sameAs": "https://www.salesforce.com/order/" + record.Id
+  
+  }
+}
+
+```
+
+
+
+
+
 #### Product2
 ```json
   {
     "@context": "https://schema.org/",
     "@type": "schema:person",
-    "@id": ???, "",
+    "@id": "",
     "category":  "",
     "color": "",
     "depth": "",
