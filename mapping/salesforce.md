@@ -23,7 +23,8 @@
     "addressLocality": record.Address.City,
     "addressRegion": record.Address.State,
     "postalCode": record.Address.PostalCode,
-    "streetAddress": record.Address.Street
+    "streetAddress": record.Address.Street,
+    "sameAs": "https://www.salesforce.com/address/" + record.id
   }
   ```
 
@@ -40,7 +41,8 @@
       "@type": "schema:organization",
       "sameAs": "https://www.salesforce.com/account/" + record.ParentId
       },
-    "url": record.Website
+    "url": record.Website,
+    "sameAs": "https://www.salesforce.com/account/" + record.id
   }
   ```
 
@@ -117,7 +119,8 @@
       "@type": "schema:organization",
       "sameAs": "https://www.salesforce.com/account/" + record.AccountId
       },
-    "url": record.Website
+    "url": record.Website,
+    "sameAs": "https://www.salesforce.com/contact/" + record.id
   }
   ```
 #### Product2
@@ -147,7 +150,7 @@
     "name": record.Name,
     "image": "",
     "url": record.DisplayUrl,
-    "sameAs": "https://www.salesforce.com/asset/" + record.id, 
+    "sameAs": "https://www.salesforce.com/product2/" + record.id
   }
 ```
 
