@@ -1,4 +1,4 @@
-Observation
+# Observation
 Individual data points making up the value of a property
 
 |Property |Expected Type |Description |
