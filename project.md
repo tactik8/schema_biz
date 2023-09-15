@@ -13,7 +13,7 @@ An initiative with a defined deliverable, start and end date.
 |customer |Organization or person |The customer |
 |Properties from action | | |
 |provider |Organization | The supplier |
-|actionStatus | ActionStatusType|Status of the project |
+|actionStatus |ActionStatusType |Status of the project |
 |endTime |Date or datetime | The end date of the project |
 |participants |Person |People working on the project |
 |startTime |Date or datetime |The start date of the project |
