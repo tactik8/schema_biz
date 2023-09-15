@@ -16,21 +16,20 @@
 #### Metadata
 ```json
   {
-      "@metadata": {
-          "observationAbout": {
-              "@type": "schema:postalAddress"
-          },
-          "source": {
-              "@type": "schema:dataFeedItem",
-              "sameAs": "https://www.salesforce.com/+ <object> + "/" + record.Id,
-              "
-          },
-          "observationDate": record.LastModifiedDate,
-          "observationCredibility": ???
-          "agent": {
-              "@type": "schema:person",
-              "sameAs": "https://www.salesforce.com/user" + record.LastModifiedById
-          }
+    "@metadata": {
+      "observationAbout": {
+          "@type": "schema:postalAddress"
+      },
+      "source": {
+          "@type": "schema:dataFeedItem",
+          "sameAs": "https://www.salesforce.com/" + <object> + "/" + record.Id,
+      },
+      "observationDate": record.LastModifiedDate,
+      "observationCredibility": ???,
+      "agent": {
+          "@type": "schema:person",
+          "sameAs": "https://www.salesforce.com/user" + record.LastModifiedById
+    }
   }
 }
 ```
