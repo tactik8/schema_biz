@@ -30,7 +30,8 @@
           "agent": {
               "@type": "schema:person",
               "sameAs": "https://www.salesforce.com/user" + record.LastModifiedById
-          }  
+          }
+  }
 }
         
 
