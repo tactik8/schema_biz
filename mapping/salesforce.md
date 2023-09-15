@@ -51,6 +51,7 @@
     "@context": "https://schema.org/",
     "@type": "schema:person",
     "@id": ???,
+    "additionalName": record.Name.MiddleName,
     "address": {
         "@context": "https://schema.org/",
         "@type": "schema:postalAddress",
@@ -64,8 +65,10 @@
     "birthDate": record.Birthdate,
     "description": record.Description,
     "email": record.Email,
-    "familyName": record.legalName,
-    "givenName": record.legalName,
+    "familyName": record.Name.FirstName,
+    "givenName": record.Name.LastName,
+    "honorificPrefix": record.Name.Salutation,
+    "honorificSuffix": record.Name.Suffix,
     "jobTitle": record.Title,
     "telephone": record.Phone,
     "workLocation": {
