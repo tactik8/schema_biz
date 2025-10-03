@@ -15,12 +15,31 @@
 | brandCoreValues | Text | Core values | 
 | brandStory | Text | Story | 
 | brandPersonality |  Text | Personality | 
-| targetAudience | PeopleAudience | The different audiences |
 
 
 
 ## Example
 ```
+
+{
+  "@type": "BrandVoice",
+  "primaryArchetype": "CaregiverBrandArchetype",
+  "secondaryeArchetype": "JesterBrandArchetype",
+  "toneHumor": 4,
+  "toneEnthusiasm": 3,
+  "toneFormality": 2,
+  "toneRespectfulness": 4,
+  "xxx": "xxx",
+  "xxx": "xxx",
+  "xxx": "xxx",
+  "xxx": "xxx",
+  "xxx": "xxx",
+  "xxx": "xxx",
+  "xxx": "xxx",
+  "xxx": "xxx",
+  "xxx": "xxx",
+
+}
 
 
 ```
