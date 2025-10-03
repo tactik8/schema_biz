@@ -1,4 +1,4 @@
-# VisualIdentity
+# BrandVisualIdentity
 
 ## Properties
 
