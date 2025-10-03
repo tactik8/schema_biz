@@ -1,4 +1,4 @@
-# Audience
+# PeopleAudience
 
 ## Properties
 |Property | Expected Type | Description |
@@ -22,4 +22,31 @@
 ## Example
 ```
 
+  {
+    "@type": "PeopleAudience",
+    "name": "Bob the builder",
+    "description": "",
+    "requiredGender": "male",
+    "requiredMinAge": 30,
+    "requiredMaxAge": 40,
+    "suggestedGender": "male",
+    "suggestedAge": 40,
+    "suggestedMinAge": 40,
+    "suggestedMaxAge": 40,
+    "geographicArea": {},
+    "psyQuote": "",
+    "psyRepresentation": "",
+    "psyPersonalityTraits": "",
+    "psyValuesBeliefs": "",
+    "psyInterests": "",
+    "psyPreferredBrands": "",
+    "psyOnlineBehaviour": "",
+    "psyShoppingHabits": "",
+    "psyProductNeeds": "",
+    "psyBrandEngagement": "",
+    "psyKeyMessages": "",
+    "psyMessagingTone": "",
+    "psyCallToAction": ""
+
+}
 ```
