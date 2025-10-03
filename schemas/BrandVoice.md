@@ -4,8 +4,8 @@
 ## Properties
 |Property | Expected Type | Description |
 |--- |---|---|
-| primaryArchetype | BrandVoiceArchetypeType | xxx | 
-| secondaryeArchetype | BrandVoiceArchetypeType | xxx | 
+| primaryArchetype | BrandArchetypeType | xxx | 
+| secondaryeArchetype | BrandArchetypeType | xxx | 
 | toneHumor | QuantitativeValue | 1. Serious, 3. Neutral 5. Humoristic |
 | toneEnthusiasm | QuantitativeValue |1. Matter-of-fact, 3.Neutral, 5. Enthusiastic  |
 | toneFormality | QuantitativeValue | 1. Casual, 3.Neutral, 5. Formal |
