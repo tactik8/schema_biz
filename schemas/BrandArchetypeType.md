@@ -5,8 +5,8 @@ Instances of ActionStatusType may appear as a value for the following properties
 
 |Property | On Types | Description |
 |--- |---|---|
-| primaryBrandArchetype | BrandVoice | Primary archetype | 
-| secondaryyBrandArchetype | BrandVoice | Secondary archetype |
+| primaryArchetype | BrandVoice | Primary archetype | 
+| secondaryArchetype | BrandVoice | Secondary archetype |
 
 
 
