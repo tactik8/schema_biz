@@ -8,7 +8,9 @@
 | brandCoreValues | Text | Core values | 
 | brandStory | Text | Story | 
 | brandPersonality |  Text | Personality | 
-| targetAudience | PeopleAudience | The different audiences |
+| primaryAudience | PeopleAudience | The different audiences |
+| secondaryAudience | PeopleAudience | The different audiences |
+| negativeAudience | PeopleAudience | Audiences to be forcibly excluded. |
 
 
 
