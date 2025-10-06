@@ -18,43 +18,54 @@
 ## Example 
 
 ```
-"typographyHierarchy": [
-          {
-            "@type": "DefinedTerm",
-            "name": "H1",
-            "description": "Montserrat Bold, 48pt / 3rem"
+{
+          "@type": "BrandVisualIdentity",
+          "@id": "https://www.test.com#brandvisualidentity",
+          "primaryColor": {
+                    "@type": "BrandColor",
+                    "name": "Forest Green",
+                    "description": "Our signature color representing growth and sustainability",
+                    "hex": "#2D5016",
+                    "RGB": "#2D5016",
+                    "CMYK": "#2D5016",
+                    "Pantone": "#2D5016"
           },
-          {
-            "@type": "DefinedTerm",
-            "name": "H2",
-            "description": "Montserrat SemiBold, 36pt / 2.25rem"
+          "secondaryColor": {
+                    "@type": "BrandColor",
+                    "name": "Forest Green",
+                    "description": "Our signature color representing growth and sustainability",
+                    "hex": "#2D5016",
+                    "RGB": "#2D5016",
+                    "CMYK": "#2D5016",
+                    "Pantone": "#2D5016"
           },
-          {
-            "@type": "DefinedTerm",
-            "name": "H3",
-            "description": "Montserrat SemiBold, 28pt / 1.75rem"
+          "accentColor": {
+                    "@type": "BrandColor",
+                    "name": "Forest Green",
+                    "description": "Our signature color representing growth and sustainability",
+                    "hex": "#2D5016",
+                    "RGB": "#2D5016",
+                    "CMYK": "#2D5016",
+                    "Pantone": "#2D5016"
           },
-          {
-            "@type": "DefinedTerm",
-            "name": "H4",
-            "description": "Montserrat Medium, 22pt / 1.375rem"
+          "colorGuidelines": "Some guidelines.",
+          "primaryTypeface": {
+                      "@type": "DefinedTerm",
+                      "name": "Montserrat",
+                      "description": "Headers and display text",
+                      "weights": "Bold (700), SemiBold (600), Medium (500),
+                      "url": "https://fonts.google.com/specimen/Montserrat"
           },
-          {
-            "@type": "DefinedTerm",
-            "name": "Body",
-            "description": "Merriweather Regular, 16pt / 1rem, line-height 1.6"
+          "secondaryTypeface": {
+                      "@type": "DefinedTerm",
+                      "name": "Montserrat",
+                      "description": "Headers and display text",
+                      "weights": "Bold (700), SemiBold (600), Medium (500),
+                      "url": "https://fonts.google.com/specimen/Montserrat"
           },
-          {
-            "@type": "DefinedTerm",
-            "name": "Small",
-            "description": "Merriweather Regular, 14pt / 0.875rem"
-          },
-          {
-            "@type": "DefinedTerm",
-            "name": "Button",
-            "description": "Montserrat SemiBold, 16pt / 1rem, uppercase, letter-spacing: 0.05em"
-          }
-        ]
+          "typographyHierarchy": ""
+
+}
 
 
 ```
