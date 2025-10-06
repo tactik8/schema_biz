@@ -69,7 +69,7 @@
   "title": "Generated Schema",
   "properties": {
       "@type": {
-          "const": "United States of America",
+          "const": "Prompt",
           "description": "The class name of the record."
       },
       "@id": {
