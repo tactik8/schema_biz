@@ -5,7 +5,8 @@
 |Property | Expected Type | Description |
 |--- |--- |--- |
 |name | Text | The name of the prompt. |
-|description | Text | The description of the prompt (what it does).   |
+|description | Text | The description of the prompt (what it does).  |
+|requirements | Text | Component dependency requirements for agent |
 |businessProcess | Text | The business process supported by this prompt (if applicable).  |
 |subjectMatter | Text | The subject matter represented by this prompt (ex: project management, marketing, etc).  |
 |deliverable | text | The deliverable produced by this prompt (ex: project plan, brand voice, marketing strategy) |
@@ -22,6 +23,7 @@
   "@id": "prompt01",
   "name": "Base prompt",
   "description": "Base prompt to be used for any situations",
+  "requirements": "These are the requirements.",
   "businessProcess": "businessProcess",
   "subjectMatter": "subjectMatter",
   "deliverable": "deliverable",
@@ -81,6 +83,10 @@
       "description": {
           "type": "string",
           "description": "The description of the prompt (what it does)."
+      },
+      "requirements": {
+          "type": "string",
+          "description": "Component dependency requirements for agent"
       },
       "businessProcess": {
           "type": "string",
