@@ -20,6 +20,35 @@
 
 ## Example
 ```
+ "toneHumor": {
+        "@type": "Rating",
+        "name": "tone dimension - humor",
+        "description": "1=Very Serious, 3=Neutral/Witty, 5=Very Humorous",
+        "ratingValue": 5,
+        "bestRating": 5
+      },
+      "toneEnthusiasm": {
+        "@type": "Rating",
+        "name": "tone dimension - enthusiasm",
+        "description": "1=Very Neutral/Objective, 3=Balanced/Calm, 5=Very Passionate/Excited",
+        "ratingValue": 2,
+        "bestRating": 5
+      },
+      "toneFormality": {
+        "@type": "Rating",
+        "name": "tone dimension - formality",
+        "description": "1=Very Casual, 3=Neutral/Conversational, 5=Very Formal",
+        "ratingValue": 4,
+        "bestRating": 5
+      },
+      "toneRespectfulness": {
+        "@type": "Rating",
+        "name": "tone dimension - respsectfulness",
+        "description": "1=Very Irreverent/Edgy, 3=Appropriately Direct, 5=Highly Respectful/Deferential",
+        "ratingValue": 5,
+        "bestRating": 5
+      }
+
 
 {
   "@type": "BrandVoice",
