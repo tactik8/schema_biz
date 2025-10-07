@@ -72,3 +72,9 @@
 
 
 ```
+output properties: 
+- toneHumor: 1 to 5, 1. Serious, 3. Neutral 5. Humoristic
+- toneEnthusiasm: 1 to 5, 1. Matter-of-fact, 3.Neutral, 5. Enthusiastic
+- toneFormality: 1 to 5, 1. Casual, 3.Neutral, 5. Formal
+- tonetechnical: 1 to 5, 1. easy to understand, 5. very technical
+- toneAssertiveness: 1 to 5, 1. humble, 5. very assertive
