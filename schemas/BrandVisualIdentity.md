@@ -5,6 +5,8 @@
 |Property | Expected Type | Description |
 |--- |--- |--- |
 |logo | Logo | logo object |
+|validFrom| Date | Start date |
+|validThrough| Date | End date |
 |primaryColor | BrandColor | the color  |
 |secondaryColor | BrandColor | the color  |
 |accentColor | BrandColor | the color  |
