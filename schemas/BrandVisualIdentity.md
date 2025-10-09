@@ -21,6 +21,8 @@
 {
           "@type": "BrandVisualIdentity",
           "@id": "https://www.test.com#brandvisualidentity",
+          "validFrom": "2022-01-01",
+          "validThrough": "2028-01-01",          
           "primaryColor": {
                     "@type": "BrandColor",
                     "name": "Forest Green",
