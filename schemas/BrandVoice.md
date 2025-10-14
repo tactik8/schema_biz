@@ -11,10 +11,10 @@
 | brandPersonality |  Text | The Character. A set of human characteristics and traits that the brand consistently expresses through its voice and visual identity. It dictates how the brand speaks and acts. (e.g., trustworthy, witty, rebellious, sincere). | 
 | primaryArchetype | BrandArchetypeType | The Main Identity. The dominant, universally recognizable symbolic pattern (e.g., The Hero, The Creator, The Innocent) that shapes the brand's deepest meaning and serves as the core of its personality. | 
 | secondaryeArchetype | BrandArchetypeType | The Supporting Role. A second, less dominant archetype that adds complexity and nuance to the brand's personality, helping it to be more distinctive and avoid being a cliché.  | 
-| toneHumor | QuantitativeValue | 1. Serious, 3. Neutral 5. Humoristic |
-| toneEnthusiasm | QuantitativeValue |1. Matter-of-fact, 3.Neutral, 5. Enthusiastic  |
-| toneFormality | QuantitativeValue | 1. Casual, 3.Neutral, 5. Formal |
-| toneRespectfulness | QuantitativeValue | 1. Irreverent, 3. Neutral, 5. Respectful |
+| toneHumor | QuantitativeValue | The use of lightheartedness, jokes, or playfulness (humorous) versus a direct, earnest, or sober manner (serious). 1. Serious, 3. Neutral 5. Humoristic |
+| toneEnthusiasm | QuantitativeValue |The level of emotion or excitement conveyed. Does the brand use exclamation points and hype (enthusiastic), or does it stick to plain, objective statements (matter-of-fact)? 1. Matter-of-fact, 3.Neutral, 5. Enthusiastic  |
+| toneFormality | QuantitativeValue | The level of professionalism in language. Does the brand use contractions, slang, and an approachable style (casual), or proper grammar and a more distant approach (formal)? 1. Casual, 3.Neutral, 5. Formal  |
+| toneRespectfulness | QuantitativeValue | The deference shown to conventions, authority, or subjects. Is the brand polite and mindful of tradition (respectful), or does it challenge norms and use bold, unexpected language (irreverent)? 1. Irreverent, 3. Neutral, 5. Respectful |
 | brandVoiceCharacteristics | Text | xxx | 
 | brandToneVariations | Text | Vision Statement |
 
