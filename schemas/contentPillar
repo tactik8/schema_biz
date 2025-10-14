@@ -7,6 +7,7 @@
 | name | text | A short, clear, and catchy title for the core topic.	 | 
 | pillarFamily | text | Why does this pillar exist? Education, Entertainment, Insprational, Promotional, Engagement, Timely |
 | TargetAudience | PersonAudience | Which specific part of your audience persona is this pillar primarily aimed at?	 | 
+| Stage of Buyer's Journey | text | Which stage of the journey does this content address? (e.g., Awareness, Consideration, Decision).	|
 | Keyword | text | The primary, high-level keyword or topic you want to rank for (for SEO-focused pillars).	 | 
 | Definition | text | A 1-2 sentence description of what this pillar covers and, just as importantly, what it does not cover.	 | 
 | subPillars | ContentPillar | Sub topics |
