@@ -4,13 +4,19 @@
 ## Properties
 |Property | Expected Type | Description |
 |--- |---|---|
-| brandVision | Text | Story | 
-| brandMission |  Text | Personality | 
-| brandCoreValues | Text | Core values | 
-| brandStory | Text | Story | 
-| brandPersonality |  Text | Personality | 
-| primaryArchetype | BrandArchetypeType | xxx | 
-| secondaryeArchetype | BrandArchetypeType | xxx | 
+| brandVision | Text | The Aspiration. A clear, inspiring statement describing the future you are working to create; it defines the long-term impact and ultimate success of the brand. (e.g., "A world where every person has access to clean energy.")
+	 | 
+| brandMission |  Text | The Business. A concise statement explaining what the brand does, who it does it for, and why it does it. It is an action-oriented explanation of the current business goals.
+ | 
+| brandCoreValues | Text | The Principles. The fundamental beliefs and guiding principles that dictate the brand's behavior, decision-making, and culture. They are non-negotiable standards. (e.g., Integrity, Innovation, Customer Focus).
+	 | 
+| brandStory | Text | The Narrative. The overarching, compelling narrative that connects the brand's history, purpose, values, and vision into a cohesive, emotional journey for the audience.
+ 	 | 
+| brandPersonality |  Text | The Character. A set of human characteristics and traits that the brand consistently expresses through its voice and visual identity. It dictates how the brand speaks and acts. (e.g., trustworthy, witty, rebellious, sincere).
+ | 
+| primaryArchetype | BrandArchetypeType | The Main Identity. The dominant, universally recognizable symbolic pattern (e.g., The Hero, The Creator, The Innocent) that shapes the brand's deepest meaning and serves as the core of its personality.
+ | 
+| secondaryeArchetype | BrandArchetypeType | The Supporting Role. A second, less dominant archetype that adds complexity and nuance to the brand's personality, helping it to be more distinctive and avoid being a cliché.  | 
 | toneHumor | QuantitativeValue | 1. Serious, 3. Neutral 5. Humoristic |
 | toneEnthusiasm | QuantitativeValue |1. Matter-of-fact, 3.Neutral, 5. Enthusiastic  |
 | toneFormality | QuantitativeValue | 1. Casual, 3.Neutral, 5. Formal |
