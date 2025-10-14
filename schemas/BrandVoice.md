@@ -88,29 +88,29 @@
     },
     "toneHumor": {
       "type": "integer",
-      "title": "xxx",
-      "description": "ccc",
+      "title": "Humorous vs. Serious",
+      "description": "The use of lightheartedness, jokes, or playfulness (humorous) versus a direct, earnest, or sober manner (serious). 1. Serious, 3. Neutral 5. Humoristic",
       "minimum": "1",
       "maximum": 5
     },
     "toneEnthusiasm": {
      "type": "integer",
- "title": "xxx",
-      "description": "ccc",
+     "title": "Enthusiastic vs. Matter-of-fact	",
+      "description": "The level of emotion or excitement conveyed. Does the brand use exclamation points and hype (enthusiastic), or does it stick to plain, objective statements (matter-of-fact)? 1. Matter-of-fact, 3.Neutral, 5. Enthusiastic",
       "minimum": "1",
       "maximum": 5
     },
     "toneFormality": {
      "type": "integer",
- "title": "xxx",
-      "description": "ccc",
+     "title": "Formal vs. Casual",
+      "description": "The level of professionalism in language. Does the brand use contractions, slang, and an approachable style (casual), or proper grammar and a more distant approach (formal)? 1. Casual, 3.Neutral, 5. Formal ",
       "minimum": "1",
       "maximum": 5
     },
     "toneRespectfulness": {
       "type": "integer",
- "title": "xxx",
-      "description": "ccc",
+       "title": "Respectful vs. Irreverent	",
+      "description": "The deference shown to conventions, authority, or subjects. Is the brand polite and mindful of tradition (respectful), or does it challenge norms and use bold, unexpected language (irreverent)? 1. Irreverent, 3. Neutral, 5. Respectful",
       "minimum": "1",
       "maximum": 5
     }
