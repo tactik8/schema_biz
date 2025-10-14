@@ -4,6 +4,11 @@
 ## Properties
 |Property | Expected Type | Description |
 |--- |---|---|
+| brandVision | Text | Story | 
+| brandMission |  Text | Personality | 
+| brandCoreValues | Text | Core values | 
+| brandStory | Text | Story | 
+| brandPersonality |  Text | Personality | 
 | primaryArchetype | BrandArchetypeType | xxx | 
 | secondaryeArchetype | BrandArchetypeType | xxx | 
 | toneHumor | QuantitativeValue | 1. Serious, 3. Neutral 5. Humoristic |
@@ -12,63 +17,27 @@
 | toneRespectfulness | QuantitativeValue | 1. Irreverent, 3. Neutral, 5. Respectful |
 | brandVoiceCharacteristics | Text | xxx | 
 | brandToneVariations | Text | Vision Statement |
-| brandCoreValues | Text | Core values | 
-| brandStory | Text | Story | 
-| brandPersonality |  Text | Personality | 
 
 
 
 ## Example
 ```
- "toneHumor": {
-        "@type": "Rating",
-        "name": "tone dimension - humor",
-        "description": "1=Very Serious, 3=Neutral/Witty, 5=Very Humorous",
-        "ratingValue": 5,
-        "bestRating": 5
-      },
-      "toneEnthusiasm": {
-        "@type": "Rating",
-        "name": "tone dimension - enthusiasm",
-        "description": "1=Very Neutral/Objective, 3=Balanced/Calm, 5=Very Passionate/Excited",
-        "ratingValue": 2,
-        "bestRating": 5
-      },
-      "toneFormality": {
-        "@type": "Rating",
-        "name": "tone dimension - formality",
-        "description": "1=Very Casual, 3=Neutral/Conversational, 5=Very Formal",
-        "ratingValue": 4,
-        "bestRating": 5
-      },
-      "toneRespectfulness": {
-        "@type": "Rating",
-        "name": "tone dimension - respsectfulness",
-        "description": "1=Very Irreverent/Edgy, 3=Appropriately Direct, 5=Highly Respectful/Deferential",
-        "ratingValue": 5,
-        "bestRating": 5
-      }
+  {
+   "@type": "BrandVoice",
+   "brandVision":"xx",
+   "brandMission": "xxx",
+   "brandCoreValues": "xxx",
+   "brandStory": "xxx",
+   "brandPersonality": "xxx",
+   "primaryArchetype": "CaregiverBrandArchetype",
+   "secondaryeArchetype": "JesterBrandArchetype",
+   "toneHumor": 4,
+   "toneEnthusiasm": 3,
+   "toneFormality": 2,
+   "toneRespectfulness": 4
+  }
 
 
-{
-  "@type": "BrandVoice",
-  "primaryArchetype": "CaregiverBrandArchetype",
-  "secondaryeArchetype": "JesterBrandArchetype",
-  "toneHumor": 4,
-  "toneEnthusiasm": 3,
-  "toneFormality": 2,
-  "toneRespectfulness": 4,
-  "xxx": "xxx",
-  "xxx": "xxx",
-  "xxx": "xxx",
-  "xxx": "xxx",
-  "xxx": "xxx",
-  "xxx": "xxx",
-  "xxx": "xxx",
-  "xxx": "xxx",
-  "xxx": "xxx",
-
-}
 
 
 ```
