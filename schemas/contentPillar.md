@@ -16,7 +16,31 @@
 | Repurposing Opportunities	 | text | How can the primary content be broken down and reused?	 |
 | Call-to-Action (CTA)		 | text | The desired action after consuming the content	 |
 
-  
+  ## Consolidated Content Pillar Schema Documentation
+
+| Object | Field Name (from JSON) | Data Type | Description |
+| :--- | :--- | :--- | :--- |
+| **Pillar** | **pillar\_name** | `string` | A short, clear title for the core topic. |
+| **Pillar** | **pillar\_goal** | `string` | The brand or business objective this pillar serves (e.g., Education, Promotion, Trust). |
+| **Pillar** | **target\_audience\_segment** | `string` | The specific audience persona this pillar is aimed at. |
+| **Pillar** | **key\_head\_term** | `string` | The primary, high-level keyword or topic for SEO. |
+| **Pillar** | **pillar\_definition** | `string` | A 1-2 sentence description of what the pillar covers. |
+| **Pillar** | **sub\_pillars** | `array of objects` | Array of specific, in-depth sub-topics or topic clusters. |
+| **Pillar** | **performance\_review** | `object` | Tracking and review metadata for the pillar. |
+| **Sub-Pillar** | **sub\_pillar\_name** | `string` | The name of the mid-level theme or topic cluster. |
+| **Sub-Pillar** | **buyer\_journey\_stage** | `string` | Which stage of the customer journey this content addresses (e.g., Awareness, Consideration, Decision). |
+| **Sub-Pillar** | **content\_ideas** | `array of objects` | Specific titles or concepts for individual content pieces. |
+| **Content Idea** | **idea\_title** | `string` | The working title for the content piece. |
+| **Content Idea** | **target\_keywords** | `array of strings` | Specific, long-tail keywords for the content idea. |
+| **Content Idea** | **content\_mapping** | `array of objects` | Mapping to content formats and distribution channels. |
+| **Content Mapping**| **primary\_format** | `string` | The best content type for this piece (e.g., Blog Post, Video Tutorial). |
+| **Content Mapping**| **distribution\_channel** | `string` | Where the content will primarily be shared (e.g., Website Blog, YouTube). |
+| **Content Mapping**| **repurposing\_opportunities** | `string` | How the content can be reused (e.g., Pulling tips for social carousel). |
+| **Content Mapping**| **call\_to\_action** | `string` | The desired audience action after consuming the content. |
+| **Performance** | **start\_date** | `string` (date) | When the pillar was officially launched. |
+| **Performance** | **performance\_metrics** | `array of strings` | The specific KPIs used to measure success (e.g., Time on Page, Traffic Share). |
+| **Performance** | **review\_date** | `string` (date) | When the pillar's performance will be formally audited. |
+| **Performance** | **status\_notes** | `string` | Current status and key takeaways. |
   
   ## Example
 
