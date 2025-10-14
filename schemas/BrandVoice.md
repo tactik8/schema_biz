@@ -41,6 +41,101 @@
 
 
 ```
+
+
+## JSON Schema
+
+```
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "@type": {
+      "type": "string"
+    },
+    "brandVision": {
+      "type": "string",
+       "title": "xxx",
+      "description": "ccc",
+    },
+    "brandMission": {
+      "type": "string",
+      "title": "xxx",
+      "description": "ccc",
+    },
+    "brandCoreValues": {
+      "type": "string",
+       "title": "xxx",
+      "description": "ccc",
+    },
+    "brandStory": {
+      "type": "string",
+       "title": "xxx",
+      "description": "ccc",
+    },
+    "brandPersonality": {
+      "type": "string",
+       "title": "xxx",
+      "description": "ccc",
+    },
+    "primaryArchetype": {
+      "type": "string"
+    },
+    "secondaryeArchetype": {
+      "type": "string",
+ "title": "xxx",
+      "description": "ccc",
+    },
+    "toneHumor": {
+      "type": "integer",
+      "title": "xxx",
+      "description": "ccc",
+      "minimum": "1",
+      "maximum": 5
+    },
+    "toneEnthusiasm": {
+     "type": "integer",
+ "title": "xxx",
+      "description": "ccc",
+      "minimum": "1",
+      "maximum": 5
+    },
+    "toneFormality": {
+     "type": "integer",
+ "title": "xxx",
+      "description": "ccc",
+      "minimum": "1",
+      "maximum": 5
+    },
+    "toneRespectfulness": {
+      "type": "integer",
+ "title": "xxx",
+      "description": "ccc",
+      "minimum": "1",
+      "maximum": 5
+    }
+  },
+  "required": [
+    "@type",
+    "brandVision",
+    "brandMission",
+    "brandCoreValues",
+    "brandStory",
+    "brandPersonality",
+    "primaryArchetype",
+    "secondaryeArchetype",
+    "toneHumor",
+    "toneEnthusiasm",
+    "toneFormality",
+    "toneRespectfulness"
+  ]
+}
+
+
+```
+
+
+
 output properties: 
 - toneHumor: 1 to 5, 1. Serious, 3. Neutral 5. Humoristic
 - toneEnthusiasm: 1 to 5, 1. Matter-of-fact, 3.Neutral, 5. Enthusiastic
