@@ -7,7 +7,8 @@
 | **campaignId** | string | The numerical identifier of the parent campaign to which this Ad Group belongs. |
 | **adGroupName** | string | The descriptive name of the Ad Group. |
 | **adGroupStatus** | string (enum) | The operational status of the Ad Group (`ENABLED`, `PAUSED`, `REMOVED`). |
-| **inLanguage** | string | The language of the ad group |
+| **inLanguage** | string | The language of the ad group. |
+| **customerJourneyStage** | string | The stage of the customer journey (awareness, interest, decision, action, retention). |
 | **defaultBid** | number | The default Cost-Per-Click (CPC) bid set for this Ad Group, represented as a monetary value. |
 | **keywords** | array (of Keyword) | A list of search terms and their match types targeted by this Ad Group. |
 | *keywords\[\].text* | string | The keyword text itself (e.g., 'buy running shoes'). |
