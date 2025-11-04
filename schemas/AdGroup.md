@@ -76,6 +76,7 @@
   "adGroupName": "Performance Runners - Exact Match",
   "status": "ENABLED",
   "defaultBid": 1.25,
+  "inLanguage": "fr",
   "keywords": [
     {
       "text": "[men's marathon shoe]",
