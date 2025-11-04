@@ -31,7 +31,7 @@
 ```
 {
     "@context": "https://schema.org",
-    "@type": "CommunicateAction",
+    "@type": "Campaign",
     "name": "Spring 2026 'Renew & Refresh' Digital Campaign",
     "description": "A focused, multi-channel campaign (social, search, email) running for 8 weeks to promote the new line of eco-friendly home appliances and drive first-time buyer conversions.",
     "identifier": "SR2026-001",
