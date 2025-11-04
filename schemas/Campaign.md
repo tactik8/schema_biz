@@ -30,56 +30,49 @@
 
 ```
 {
-"@context": "https://schema.org",
-"@type": "CommunicateAction",
-"name": "Spring 2026 'Renew & Refresh' Digital Campaign",
-"description": "A focused, multi-channel campaign (social, search, email) running for 8 weeks to promote the new line of eco-friendly home appliances and drive first-time buyer conversions.",
-"identifier": "SR2026-001",
-"actionStatus": "https://schema.org/ActiveActionStatus",
-
-"startDate": "2026-03-01",
-"endDate": "2026-04-30",
-
-"agent": {
-"@type": "Organization",
-"name": "GreenLife Appliances Inc.",
-"url": "https://www.greenlife.com",
-"logo": "https://www.google.com/search?q=https://www.greenlife.com/logo.svg"
-},
-
-"instrument": [
-{
-"@type": "DigitalDocument",
-"name": "Campaign Creative Brief",
-"encodingFormat": "application/pdf"
-},
-{
-"@type": "WebPage",
-"name": "Campaign Landing Page",
-"url": "https://www.google.com/search?q=https://www.greenlife.com/refresh-2026"
+    "@context": "https://schema.org",
+    "@type": "CommunicateAction",
+    "name": "Spring 2026 'Renew & Refresh' Digital Campaign",
+    "description": "A focused, multi-channel campaign (social, search, email) running for 8 weeks to promote the new line of eco-friendly home appliances and drive first-time buyer conversions.",
+    "identifier": "SR2026-001",
+    "actionStatus": "https://schema.org/ActiveActionStatus",
+    "startDate": "2026-03-01",
+    "endDate": "2026-04-30",
+    "agent": {
+        "@type": "Organization",
+        "name": "GreenLife Appliances Inc.",
+        "url": "https://www.greenlife.com",
+        "logo": "https://www.google.com/search?q=https://www.greenlife.com/logo.svg"
+    },
+    "instrument": [
+        {
+            "@type": "DigitalDocument",
+            "name": "Campaign Creative Brief",
+            "encodingFormat": "application/pdf"
+        },
+        {
+            "@type": "WebPage",
+            "name": "Campaign Landing Page",
+            "url": "https://www.google.com/search?q=https://www.greenlife.com/refresh-2026"
+        }
+    ],
+    "about": {
+        "@type": "Product",
+        "name": "GreenLife Eco-Washer Model 5000",
+        "brand": {
+            "@type": "Brand",
+            "name": "GreenLife Eco"
+        },
+        "category": "Home Appliances"
+    },
+    "recipient": {
+        "@type": "Audience",
+        "name": "Environmentally Conscious Homeowners",
+        "geographicArea": "North America",
+        "audienceType": "Adults (30-55) with household income > $75k",
+        "knowsLanguage": "en"
+    }
 }
-],
-
-"about": {
-"@type": "Product",
-"name": "GreenLife Eco-Washer Model 5000",
-"brand": {
-"@type": "Brand",
-"name": "GreenLife Eco"
-},
-"category": "Home Appliances"
-},
-
-"recipient": {
-"@type": "Audience",
-"name": "Environmentally Conscious Homeowners",
-"geographicArea": "North America",
-"audienceType": "Adults (30-55) with household income > $75k",
-"knowsLanguage": "en"
-}
-}
-
-
 
 
 ```
