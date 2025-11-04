@@ -70,79 +70,84 @@
 ## JSON Schema
 ```
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Google Ads Ad Group Schema",
-  "type": "object",
-  "description": "A JSON Schema definition for a single Google Ads Ad Group, including its association with a Campaign, keywords, and creative assets.",
-
-  "properties": {
-    "adGroupId": {
-      "type": "string",
-      "description": "The unique numerical identifier assigned to the Ad Group by Google Ads."
+  "adGroupId": "205478119234",
+  "campaignId": "199456700012",
+  "adGroupName": "Performance Runners - Exact Match",
+  "status": "ENABLED",
+  "defaultBid": 1.25,
+  "keywords": [
+    {
+      "text": "[men's marathon shoe]",
+      "matchType": "EXACT",
+      "id": "5001"
     },
-    "campaignId": {
-      "type": "string",
-      "description": "The numerical identifier of the parent campaign to which this Ad Group belongs."
+    {
+      "text": "\"buy performance runners\"",
+      "matchType": "PHRASE",
+      "id": "5002"
     },
-    "adGroupName": {
-      "type": "string",
-      "description": "The descriptive name of the Ad Group."
-    },
-    "status": {
-      "type": "string",
-      "description": "The operational status of the Ad Group.",
-      "enum": ["ENABLED", "PAUSED", "REMOVED"]
-    },
-    "defaultBid": {
-      "type": "number",
-      "description": "The default Cost-Per-Click (CPC) bid set for this Ad Group, represented as a monetary value."
-    },
-    "keywords": {
-      "type": "array",
-      "description": "A list of search terms and their match types targeted by this Ad Group.",
-      "items": { "$ref": "#/definitions/Keyword" }
-    },
-    "ads": {
-      "type": "array",
-      "description": "A list of all ad creatives (e.g., Expanded Text Ads, Responsive Search Ads) contained within this Ad Group.",
-      "items": { "$ref": "#/definitions/AdCreative" }
+    {
+      "text": "best race day shoes",
+      "matchType": "BROAD",
+      "id": "5003"
     }
-  },
-
-  "required": ["adGroupId", "campaignId", "adGroupName", "status", "keywords", "ads"],
-
-  "definitions": {
-    "Keyword": {
-      "type": "object",
-      "description": "Schema for a targeted Keyword.",
-      "properties": {
-        "text": { "type": "string", "description": "The keyword text itself (e.g., 'buy running shoes')." },
-        "matchType": {
-          "type": "string",
-          "description": "The keyword match type (e.g., 'EXACT', 'PHRASE', 'BROAD').",
-          "enum": ["EXACT", "PHRASE", "BROAD"]
+  ],
+  "ads": [
+    {
+      "adId": "310945780001",
+      "type": "RSA",
+      "finalUrl": "https://www.example.com/shoes/glidemax-5",
+      "headlines": [
+        {
+          "text": "The GlideMax 5",
+          "maxCharacters": 30,
+          "pinPosition": 1
         },
-        "id": { "type": "string", "description": "The unique ID for the keyword asset." }
-      },
-      "required": ["text", "matchType"]
-    },
-    "AdCreative": {
-      "type": "object",
-      "description": "Schema for a single Ad Creative asset (e.g., an RSA).",
-      "properties": {
-        "adId": { "type": "string", "description": "The unique ID for the ad creative." },
-        "adTitle": { "type": "string", "description": "The main headline for the ad." },
-        "descriptionLine1": { "type": "string", "description": "The first line of the ad description." },
-        "finalUrl": { "type": "string", "format": "url", "description": "The landing page URL." },
-        "type": {
-          "type": "string",
-          "description": "The type of ad creative (e.g., 'RSA', 'ETA', 'DSA').",
-          "enum": ["RSA", "ETA", "DSA", "CallAd"]
+        {
+          "text": "Race Day Ready!",
+          "maxCharacters": 30,
+          "pinPosition": null
+        },
+        {
+          "text": "Free Shipping Over $50",
+          "maxCharacters": 30,
+          "pinPosition": 3
         }
-      },
-      "required": ["adId", "adTitle", "descriptionLine1", "finalUrl"]
+      ],
+      "descriptions": [
+        {
+          "text": "Lightweight, Responsive Foam Technology for Peak Performance.",
+          "maxCharacters": 90
+        },
+        {
+          "text": "Shop our full collection of marathon and distance running shoes today.",
+          "maxCharacters": 90
+        }
+      ]
+    },
+    {
+      "adId": "310945780002",
+      "type": "ETA",
+      "finalUrl": "https://www.example.com/deals",
+      "headlines": [
+        {
+          "text": "Daily Deals on Runners",
+          "maxCharacters": 30,
+          "pinPosition": null
+        },
+        {
+          "text": "Free Returns on All Shoes",
+          "maxCharacters": 30,
+          "pinPosition": null
+        }
+      ],
+      "descriptions": [
+        {
+          "text": "Find Your Perfect Fit. Limited time offers and promotions available now.",
+          "maxCharacters": 90
+        }
+      ]
     }
-  }
+  ]
 }
-```
 ```
