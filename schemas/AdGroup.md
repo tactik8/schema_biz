@@ -6,7 +6,7 @@
 | **adGroupId** | string | The unique numerical identifier assigned to the Ad Group by Google Ads. |
 | **campaignId** | string | The numerical identifier of the parent campaign to which this Ad Group belongs. |
 | **adGroupName** | string | The descriptive name of the Ad Group. |
-| **campaignStatus** | string (enum) | The operational status of the Ad Group (`ENABLED`, `PAUSED`, `REMOVED`). |
+| **adGroupStatus** | string (enum) | The operational status of the Ad Group (`ENABLED`, `PAUSED`, `REMOVED`). |
 | **inLanguage** | string | The language of the ad group |
 | **defaultBid** | number | The default Cost-Per-Click (CPC) bid set for this Ad Group, represented as a monetary value. |
 | **keywords** | array (of Keyword) | A list of search terms and their match types targeted by this Ad Group. |
