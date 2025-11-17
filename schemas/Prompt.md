@@ -69,8 +69,8 @@
   "title": "Generated Schema",
   "properties": {
       "@type": {
-          "const": "Prompt",
-          "description": "The class name of the record."
+          "type": "string",
+          "description": "The class name of the record ('Prompt')."
       },
       "@id": {
           "type": "string",
@@ -116,8 +116,8 @@
                 "description": "An item that is part of the prompt. Items are text content that are associated with a role.",
                 "properties": {
                     "@type": {
-                        "constant": "PromptItem",
-                        "description": "The class name of the record."
+                        "type": "string",
+                        "description": "The class name of the record ('PromptItem')."
                     },
                     "@id": {
                         "type": "string",
