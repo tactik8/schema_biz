@@ -7,8 +7,7 @@ An initiative with a defined deliverable, start and end date.
 |Objective |Obj |The objectives of the project |
 |projectNumber |Text |Identifier for the project |
 |ProjectManager |Person |The PM |
-|Task |Action or list |The tasks of the project (nested) |
-|Properties from xyz | | |
+|Activities |Activities |The tasks of the project (nested) |
 |customer |Organization or person |The customer |
 |Properties from action | | |
 |provider |Organization | The supplier |
