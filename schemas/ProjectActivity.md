@@ -31,6 +31,8 @@
 
 
 ### Objectives
+| **Field Name** | **Schema.org Type / JSON Type** | **Description** | 
+| :--- | :--- | :--- | 
 | **@type** | Text | Objective | 
 | **@id** | Text | The id | 
 | **name** | Text | The name of the objective | 
@@ -41,6 +43,8 @@
 
 
 ### ActivityDeliverable
+| **Field Name** | **Schema.org Type / JSON Type** | **Description** | 
+| :--- | :--- | :--- | 
 | **@type** | Text | ActivityDeliverable | 
 | **@id** | Text | The id | 
 | **name** | Text | The name of the deliverable | 
@@ -50,6 +54,8 @@
 
 
 ### Constraints
+| **Field Name** | **Schema.org Type / JSON Type** | **Description** | 
+| :--- | :--- | :--- | 
 | **@type** | Text | ActivityConstraint | 
 | **@id** | Text | The id | 
 | **finishToStart** | Activity | The activity that must finish for this one to start | 
