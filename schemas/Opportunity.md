@@ -25,6 +25,7 @@
 | **@context** | URL | Defines the vocabulary used (Schema.org). | 
 | **@type** | Text (Schema Type) | Opportunity. | 
 | **name** | Text | The name of the stage. | 
+| **description** | Text | The desc of the stage. | 
 | **probability** | Number | Probability associated with the stage | 
 | **stageStartDate** | Date | The date the stage started | 
 | **stageEndDate** | Date | The date the stage end | 
