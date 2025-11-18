@@ -9,23 +9,17 @@
 | **name** | Text | The descriptive title of the marketing campaign. | 
 | **description** | Text | A summary of the campaign's goals, channels, and duration. | 
 | **identifier** | Text | A unique internal tracking code for the campaign. | 
-| **actionStatus** | URL (Status Type) | The execution status of the action (e.g., `ActiveActionStatus`). | 
+| **campaignStatus** | URL (Status Type) | The execution status of the action (e.g., `ActiveActionStatus`). | 
 | **startDate** | Date | The official start date of the campaign. | 
 | **endDate** | Date | The official end date of the campaign. | 
+| ** customerJourneyStage** | Text | The customer journey stage (awareness, interest, etc) | 
 | **agent** | Organization | The entity responsible for conducting the campaign. | 
-| *agent.name* | Text | Name of the organization. | 
-| *agent.url* | URL | Website of the organization. | 
-| **instrument** | DigitalDocument/WebPage (Array) | The specific assets and materials used to carry out the campaign (e.g., landing pages, creative briefs). | 
-| *instrument\[\].name* | Text | Name of the specific instrument (e.g., "Campaign Landing Page"). | 
-| *instrument\[\].url* | URL | URL of the instrument (if applicable). | 
 | **about** | Product | The main product or service being promoted by the campaign. | 
 | *about.name* | Text | Name of the product being promoted. | 
 | *about.brand* | Brand | The brand identity of the product. | 
 | **recipient** | Audience | The specific group of people the campaign is trying to reach. | 
-| *recipient.name* | Text | A descriptive label for the target audience segment. | 
-| *recipient.geographicArea* | Text | The primary location/region the campaign is running in. | 
-| *recipient.audienceType* | Text | Detailed demographic or psychographic breakdown of the audience. |
 | **campaignMembership** | CampaignMembership | The members of the campaign | 
+| **numberOfCampaignMembers** | Number | No |
 
 
 ## Example
