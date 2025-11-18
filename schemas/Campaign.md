@@ -25,6 +25,8 @@
 | *recipient.name* | Text | A descriptive label for the target audience segment. | 
 | *recipient.geographicArea* | Text | The primary location/region the campaign is running in. | 
 | *recipient.audienceType* | Text | Detailed demographic or psychographic breakdown of the audience. |
+| **campaignMembership** | CampaignMembership | The members of the campaign | 
+
 
 ## Example
 
