@@ -139,10 +139,16 @@
                         "type": "string",
                         "description": "The actual text of the prompt ('You are a helpful agent')"
                     }
-                }
+                },
+              "required": [
+                  "@type", "promptID", "promptCategory", "position", "text"
+                ]
             }
       }
-  }
+  },
+ "required": [
+                  "@type", "name", "description", "outputJsonSchema", "promptElement"
+                ]
 }
 
 
