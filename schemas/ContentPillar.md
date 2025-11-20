@@ -1,4 +1,5 @@
 # ContentPillar 
+Content pillars are the core themes or topics that guide a brand's content strategy, ensuring it remains focused, consistent, and relevant to its audience. They are specific categories that all content falls into, such as sustainable fashion guides or exercise tips, and help streamline content creation by making it easier to generate new ideas and align with business goals. 
 
 ## Properties 
 
