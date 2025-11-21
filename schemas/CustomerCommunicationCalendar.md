@@ -76,129 +76,140 @@ Schedule that organizes and plans all content a company will create and publish,
   "type": "object",
   "properties": {
     "@context": {
-          "type": "string",
-          "description": "The JSON-LD context, typically set to https://schema.org."
-        },
-        "@type": {
-          "type": "string",
-          "description": "The primary Schema.org type, typically 'Event' for a scheduled item."
-        },
-        "name": {
-          "type": "string",
-          "description": "A concise, descriptive name for the communication campaign or event."
-        },
-    "events": {
-      "$schema": "http://json-schema.org/draft-07/schema#",
-      "$id": "http://example.com/schemas/commCalendarEvent.json",
-      "title": "CustomerCommunicationCalendarEvent",
-      "description": "Schema for validating a scheduled customer communication event (e.g., email, social post).",
-      "type": "object",
-      "properties": {
-        "@context": {
-          "type": "string",
-          "description": "The JSON-LD context, typically set to https://schema.org."
-        },
-        "@type": {
-          "type": "string",
-          "description": "The primary Schema.org type, typically 'Event' for a scheduled item."
-        },
-        "name": {
-          "type": "string",
-          "description": "A concise, descriptive name for the communication campaign or event."
-        },
-        "startDate": {
-          "type": "string",
-          "format": "date-time",
-          "description": "The precise date and time when the communication is scheduled to be launched (ISO 8601 format)."
-        },
-        "endDate": {
-          "type": "string",
-          "format": "date-time",
-          "description": "The expected end date or time of the communication deployment window."
-        },
-        "eventStatus": {
-          "type": "string",
-          "description": "The status of the event (e.g., EventScheduled, EventPostponed)."
-        },
-        "description": {
-          "type": "string",
-          "description": "A detailed description of the communication's content and goal."
-        },
-        "workPerformed": {
-          "type": "object",
-          "description": "Details about the creative asset (the content) being communicated.",
-          "properties": {
-            "@type": {
-              "type": "string",
-              "description": "The type of creative work, e.g., 'CreativeWork', 'EmailMessage', or 'VideoObject'."
-            },
-            "name": {
-              "type": "string",
-              "description": "The internal name or version of the creative asset."
-            },
-            "encodingFormat": {
-              "type": "string",
-              "description": "The file format of the content (e.g., 'text/html', 'video/mp4')."
-            },
-            "contentUrl": {
-              "type": "string",
-              "format": "uri",
-              "description": "A URI pointing to the final asset file or draft."
-            }
-          },
-          "required": ["@type", "name"]
-        },
-        "audience": {
-          "type": "object",
-          "description": "Details about the target customer segment or audience receiving the communication.",
-          "properties": {
-            "@type": {
-              "type": "string",
-              "description": "The Schema.org type, typically 'Audience'."
-            },
-            "name": {
-              "type": "string",
-              "description": "The human-readable name of the audience segment (e.g., 'High-Value Purchasers')."
-            },
-            "audienceType": {
-              "type": "string",
-              "description": "A classification of the audience (e.g., 'Customer Segment', 'Social Media Followers')."
-            }
-          },
-          "required": ["@type", "name"]
-        },
-        "about": {
-          "type": "object",
-          "description": "The strategic objective or goal this communication supports.",
-          "properties": {
-            "@type": {
-              "type": "string",
-              "description": "The Schema.org type, typically 'Action' or 'Goal'."
-            },
-            "name": {
-              "type": "string",
-              "description": "The name of the strategic action (e.g., 'Customer Retention', 'Lead Generation')."
-            }
-          },
-          "required": ["@type", "name"]
-        }
-      },
-      "required": [
-        "@context",
-        "@type",
-        "name",
-        "startDate",
-        "workPerformed",
-        "audience"
-      ]
+      "type": "string",
+      "description": "The JSON-LD context, typically set to https://schema.org."
     },
-"required": [
- "@context",
-        "@type",
-        "name",
-"events"
-]
-
+    "@type": {
+      "type": "string",
+      "description": "The primary Schema.org type, typically 'Event' for a scheduled item."
+    },
+    "name": {
+      "type": "string",
+      "description": "A concise, descriptive name for the communication campaign or event."
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "title": "CustomerCommunicationCalendarEvent",
+        "description": "Schema for validating a scheduled customer communication event (e.g., email, social post).",
+        "type": "object",
+        "properties": {
+          "@context": {
+            "type": "string",
+            "description": "The JSON-LD context, typically set to https://schema.org."
+          },
+          "@type": {
+            "type": "string",
+            "description": "The primary Schema.org type, typically 'Event' for a scheduled item."
+          },
+          "name": {
+            "type": "string",
+            "description": "A concise, descriptive name for the communication campaign or event."
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time",
+            "description": "The precise date and time when the communication is scheduled to be launched (ISO 8601 format)."
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time",
+            "description": "The expected end date or time of the communication deployment window."
+          },
+          "eventStatus": {
+            "type": "string",
+            "description": "The status of the event (e.g., EventScheduled, EventPostponed)."
+          },
+          "description": {
+            "type": "string",
+            "description": "A detailed description of the communication's content and goal."
+          },
+          "workPerformed": {
+            "type": "object",
+            "description": "Details about the creative asset (the content) being communicated.",
+            "properties": {
+              "@type": {
+                "type": "string",
+                "description": "The type of creative work, e.g., 'CreativeWork', 'EmailMessage', or 'VideoObject'."
+              },
+              "name": {
+                "type": "string",
+                "description": "The internal name or version of the creative asset."
+              },
+              "encodingFormat": {
+                "type": "string",
+                "description": "The file format of the content (e.g., 'text/html', 'video/mp4')."
+              },
+              "contentUrl": {
+                "type": "string",
+                "format": "uri",
+                "description": "A URI pointing to the final asset file or draft."
+              }
+            },
+            "required": [
+              "@type",
+              "name"
+            ]
+          },
+          "audience": {
+            "type": "object",
+            "description": "Details about the target customer segment or audience receiving the communication.",
+            "properties": {
+              "@type": {
+                "type": "string",
+                "description": "The Schema.org type, typically 'Audience'."
+              },
+              "name": {
+                "type": "string",
+                "description": "The human-readable name of the audience segment (e.g., 'High-Value Purchasers')."
+              },
+              "audienceType": {
+                "type": "string",
+                "description": "A classification of the audience (e.g., 'Customer Segment', 'Social Media Followers')."
+              }
+            },
+            "required": [
+              "@type",
+              "name"
+            ]
+          },
+          "about": {
+            "type": "object",
+            "description": "The strategic objective or goal this communication supports.",
+            "properties": {
+              "@type": {
+                "type": "string",
+                "description": "The Schema.org type, typically 'Action' or 'Goal'."
+              },
+              "name": {
+                "type": "string",
+                "description": "The name of the strategic action (e.g., 'Customer Retention', 'Lead Generation')."
+              }
+            },
+            "required": [
+              "@type",
+              "name"
+            ]
+          }
+        },
+        "required": [
+          "@context",
+          "@type",
+          "name",
+          "startDate",
+          "workPerformed",
+          "audience"
+        ]
+      }
+    },
+    "required": [
+      "@context",
+      "@type",
+      "name",
+      "events"
+    ]
+  }
 }
 
 ```
