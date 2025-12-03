@@ -85,8 +85,7 @@
   "properties": {
     "@type": {
       "type": "string",
-      "description": "The type of object, which is 'BrandVisualIdentity'.",
-      "const": "BrandVisualIdentity"
+      "description": "The type of object, which is 'BrandVisualIdentity'."
     },
     "@id": {
       "type": "string",
