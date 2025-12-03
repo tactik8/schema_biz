@@ -143,8 +143,7 @@
       "properties": {
         "@type": {
           "type": "string",
-          "description": "The type of object, which is 'BrandColor'.",
-          "const": "BrandColor"
+          "description": "The type of object, which is 'BrandColor'."
         },
         "name": {
           "type": "string",
@@ -183,8 +182,7 @@
       "properties": {
         "@type": {
           "type": "string",
-          "description": "The type of object, which is 'DefinedTerm'.",
-          "const": "DefinedTerm"
+          "description": "The type of object, which is 'DefinedTerm'."        
         },
         "name": {
           "type": "string",
