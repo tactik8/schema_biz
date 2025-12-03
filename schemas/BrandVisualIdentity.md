@@ -77,7 +77,7 @@
 
 ```
 {
-  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.com/BrandVisualIdentitySchema.json",
   "title": "BrandVisualIdentity",
   "description": "Schema for describing the visual identity and guidelines of a brand.",
