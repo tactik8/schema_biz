@@ -51,7 +51,8 @@
   "type": "object",
   "properties": {
     "@type": {
-      "type": "string"
+      "type": "string",
+      "description": "The type of object, which is 'BrandVoice'."
     },
     "brandVision": {
       "type": "string",
