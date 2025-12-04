@@ -11,6 +11,7 @@
 | **exclusionDate** | Date | The date the member was excluded from the Campaign |
 | **campaignMemberStatus** | CampaignMemberStatus | The status of the member (potantialCampaignMemberStatus, activeCampaignMemberStatus, convertedCampaignMemberStatus, failedCampaignMemberStatus, excludedCampaignMemberStatus) |
 | **campaignInteraction** | CampaignInteraction | The interactions with the member for this campaign |
+| **conversionStatus**  | If converted |    |
 
 
 ## Example 
