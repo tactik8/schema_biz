@@ -129,7 +129,7 @@
                     },
                     "promptCategory": {
                         "type": "string",
-                        "description": "The category of the prompt (role, task, context, output format, constraints)"
+                        "description": "The category of the prompt (role, task, context, output format, constraints). Categories can repeat between promptElements, for example ther could be 3 promptElements in the task category."
                     },
                     "position": {
                         "type": "integer",
