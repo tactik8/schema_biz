@@ -94,7 +94,6 @@
   "properties": {
     "@type": {
       "type": "string",
-      "const": "BrandVisualIdentity",
       "description": "The type of object, which is 'BrandVisualIdentity'."
     },
     "@id": {
@@ -156,7 +155,7 @@
       "properties": {
         "@type": {
           "type": "string",
-          "const": "BrandColor"
+          "description": "The type of object, which is 'BrandColor'."
         },
         "name": {
           "type": "string",
@@ -196,7 +195,7 @@
       "properties": {
         "@type": {
           "type": "string",
-          "const": "BrandTypeface"
+          "description": "The type of object, which is 'BrandTypeface'."
         },
         "name": {
           "type": "string",
