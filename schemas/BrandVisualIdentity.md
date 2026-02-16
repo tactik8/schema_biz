@@ -52,6 +52,15 @@
                     "CMYK": "#2D5016",
                     "Pantone": "#2D5016"
           },
+           "backgroundColor": {
+                    "@type": "BrandColor",
+                    "name": "White",
+                    "description": "Our signature color representing growth and sustainability",
+                    "hex": "#2D5016",
+                    "RGB": "#2D5016",
+                    "CMYK": "#2D5016",
+                    "Pantone": "#2D5016"
+          },
           "colorGuidelines": "Some guidelines.",
           "primaryTypeface": {
                       "@type": "DefinedTerm",
@@ -112,6 +121,10 @@
     },
     "accentColor": {
       "description": "The accent color used for highlights and calls-to-action.",
+      "$ref": "#/$defs/BrandColor"
+    },
+    "backgroundColor": {
+      "description": "The color used for background.",
       "$ref": "#/$defs/BrandColor"
     },
     "colorGuidelines": {
