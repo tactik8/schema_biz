@@ -94,6 +94,7 @@
   "properties": {
     "@type": {
       "type": "string",
+      "const": "BrandVisualIdentity",
       "description": "The type of object, which is 'BrandVisualIdentity'."
     },
     "@id": {
@@ -124,7 +125,7 @@
       "$ref": "#/$defs/BrandColor"
     },
     "backgroundColor": {
-      "description": "The color used for background.",
+      "description": "The color used for backgrounds.",
       "$ref": "#/$defs/BrandColor"
     },
     "colorGuidelines": {
@@ -155,7 +156,7 @@
       "properties": {
         "@type": {
           "type": "string",
-          "description": "The type of object, which is 'BrandColor'."
+          "const": "BrandColor"
         },
         "name": {
           "type": "string",
@@ -167,12 +168,13 @@
         },
         "hex": {
           "type": "string",
-          "description": "The hexadecimal color code (e.g., '#RRGGBB').",
+          "description": "The hexadecimal color code including the hash.",
           "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
         },
         "RGB": {
           "type": "string",
-          "description": "The RGB color code (often same as Hex for digital use, but could be 'rgb(r,g,b)')."
+          "description": "The RGB color code in 'rgb(r,g,b)' format.",
+          "pattern": "^rgb\\(\\s*(?:(?:\\d{1,3})\\s*,\\s*){2}(?:\\d{1,3})\\s*\\)$"
         },
         "CMYK": {
           "type": "string",
@@ -180,7 +182,7 @@
         },
         "Pantone": {
           "type": "string",
-          "description": "The Pantone Matching System (PMS) color code for standardized print color."
+          "description": "The Pantone Matching System (PMS) color code."
         }
       },
       "required": [
@@ -190,11 +192,11 @@
     },
     "BrandTypeface": {
       "type": "object",
-      "description": "Defines a specific term or concept, used here for typefaces.",
+      "description": "Defines a specific typeface used in the brand identity.",
       "properties": {
         "@type": {
           "type": "string",
-          "description": "The type of object, which is 'BrandTypeface'."        
+          "const": "BrandTypeface"
         },
         "name": {
           "type": "string",
@@ -202,16 +204,22 @@
         },
         "description": {
           "type": "string",
-          "description": "A description of the typeface's purpose (e.g., 'Headers and display text')."
+          "description": "A description of the typeface's purpose."
         },
         "weights": {
-          "type": "string",
-          "description": "A list of available font weights (e.g., 'Bold (700), SemiBold (600)')."
+          "type": "array",
+          "description": "A list of available numeric font weights.",
+          "items": {
+            "type": "integer",
+            "minimum": 100,
+            "maximum": 900
+          },
+          "examples": [400, 700]
         },
         "url": {
           "type": "string",
           "format": "uri",
-          "description": "A URL where the typeface can be found or downloaded. Ideally from google fonts."
+          "description": "A URL where the typeface can be found (e.g., Google Fonts)."
         }
       },
       "required": [
