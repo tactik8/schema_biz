@@ -133,11 +133,11 @@
     },
     "primaryTypeface": {
       "description": "The primary typeface (font) used for headings and display text.",
-      "$ref": "#/$defs/DefinedTerm"
+      "$ref": "#/$defs/BrandTypeface"
     },
     "secondaryTypeface": {
       "description": "The secondary typeface (font) used for body text and supplementary content.",
-      "$ref": "#/$defs/DefinedTerm"
+      "$ref": "#/$defs/BrandTypeface"
     },
     "typographyHierarchy": {
       "type": "string",
@@ -188,13 +188,13 @@
         "name"
       ]
     },
-    "DefinedTerm": {
+    "BrandTypeface": {
       "type": "object",
       "description": "Defines a specific term or concept, used here for typefaces.",
       "properties": {
         "@type": {
           "type": "string",
-          "description": "The type of object, which is 'DefinedTerm'."        
+          "description": "The type of object, which is 'BrandTypeface'."        
         },
         "name": {
           "type": "string",
@@ -211,7 +211,7 @@
         "url": {
           "type": "string",
           "format": "uri",
-          "description": "A URL where the typeface can be found or downloaded."
+          "description": "A URL where the typeface can be found or downloaded. Ideally from google fonts."
         }
       },
       "required": [
