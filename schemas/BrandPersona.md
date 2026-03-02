@@ -28,7 +28,7 @@
 }
 ```
 
-
+## JSON Schema
 
 ```
 
@@ -89,4 +89,63 @@
   }
 }
 
+```
+
+## Brand Persona List JSON Schema
+
+```
+
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BrandPersonaList",
+  "description": "A collection of target audience segments.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "title": "BrandPersona",
+    "required": [
+      "name",
+      "jobTitle",
+      "quotation",
+      "age"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "A fictional but descriptive moniker (e.g., 'Eco-Conscious Ethan')."
+      },
+      "jobTitle": {
+        "type": "string",
+        "description": "Professional title or primary life role/stage."
+      },
+      "quotation": {
+        "type": "string",
+        "description": "A first-person mantra or quote capturing their core attitude."
+      },
+      "age": {
+        "oneOf": [
+          { "type": "integer", "minimum": 0 },
+          { "type": "string" }
+        ],
+        "description": "The chronological age or a descriptive range (e.g., '25-34')."
+      },
+      "gender": {
+        "type": "string",
+        "description": "Gender identity or demographic lean."
+      },
+      "location": {
+        "type": "string",
+        "description": "Geographic region or urbanization level."
+      },
+      "income_education": {
+        "type": "string",
+        "description": "Socioeconomic status, earnings, and educational background."
+      },
+      "family_status": {
+        "type": "string",
+        "description": "Household composition and marital status."
+      }
+    }
+  }
+}
 ```
