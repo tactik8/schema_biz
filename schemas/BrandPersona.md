@@ -2,31 +2,30 @@
 # BrandPersona
 
 ## Properties
-|Property | Expected Type | Description |
-|--- |---|---|
-| suggestedGender | Test | The typical gender for this audience. |
-| suggestedMinAge | Number | The typical minimum age for this audience. |
-| suggestedMaxAge | Number | The typical maximum age for this audience. |
-| geographicArea | Test | The typical geographic area for this audience (city vs suburbs vs campaign) |
-| psyQuote | Text | A quote the person could have said to represent themselves | 
-| psyRepresentation | Text | A short image of the audience. ("David, a caring dog parent in his 30s-40s."). |
-| psyPersonalityTraits | Text | ("Responsible, loving, proactive, attentive to their dog's needs.") | 
-| psyValuesBeliefs | Text | The typical value sor beliefs of this audience. | 
-| psyInterests |  Text | The typical interests or hobbies of this audience.  | 
-| psyPreferredBrands | Text | Text |
-| psyOnlineBehaviour  | Text | The online behaviour typical of this audience. |
-| psyShoppingHabits  | Text | The shopping habits of this audience regarding this product or service. |
-| psyProductNeeds  | Text | The typical needs for this audience from this type of product or service. |
-| psyBrandEngagement  | Text | Text |
-| psyKeyMessages | Text | The key messages likely to resonate with the audience. |
-| psyMessagingTone  | Text | The tone to be used to communicate with the audience.  |
-| psyCallToAction  | Text | The call to actions susceptible to resonate with the audience. |
-
+| Property | Expected Type | Description |
+| :--- | :--- | :--- |
+| **name** | `string` | A fictional but descriptive moniker that humanizes the persona (e.g., 'Eco-Conscious Ethan'). |
+| **jobTitle** | `string` | The persona's professional title for B2B contexts or primary life role/stage for B2C contexts. |
+| **quotation** | `string` | A first-person mantra or quote that encapsulates the persona's core motivation or pain point. |
+| **age** | `integer` OR `string` | The chronological age or a descriptive life stage range (e.g., '25-34' or 'Mid-40s'). |
+| **gender** | `string` | The gender identity or demographic lean of the persona. |
+| **location** | `string` | The geographic region, climate, or urbanization level (e.g., 'Metropolitan Europe' or 'Rural Midwest'). |
+| **income_education** | `string` | A summary of the persona's socioeconomic status, including annual earnings and highest level of schooling. |
+| **family_status** | `string` | Household composition, marital status, and presence of dependents. |
 
 
 ## Example
 ```
-
+{
+  "name": "Modern Minimalist Maya",
+  "jobTitle": "Senior UX Designer & Freelance Consultant",
+  "quotation": "I value experiences over ownership; if a product doesn't simplify my life, it's just clutter.",
+  "age": "28-35",
+  "gender": "Female / Non-binary leaning",
+  "location": "Urban Pacific Northwest (Seattle/Portland/Vancouver)",
+  "income_education": "$95k+ annual income; Bachelor of Fine Arts in Digital Media.",
+  "family_status": "Single; living with a partner in a rented high-rise apartment; no children; pet owner (Greyhound)."
+}
 ```
 
 
